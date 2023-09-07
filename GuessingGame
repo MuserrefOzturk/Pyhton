@@ -1,0 +1,16 @@
+import random
+number=random.randint(1,100)
+chances=5
+while chances > 0:
+    chances -= 1
+    guess=int(input('Your guess: '))
+
+    if guess==number:
+        print('Congratulations, you guessed the number!')
+        break
+    elif guess>number:
+        print('lower')
+    else :
+        print('higher')
+    if chances==0:
+        print(f'You are out of chances.The selected number is:{number}')

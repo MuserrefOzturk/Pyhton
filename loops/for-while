@@ -1,0 +1,11 @@
+product=[]
+itm= int(input(' How many items: '))
+i=0
+while(i<itm):
+    name=input('product name: ')
+    price=input('product price: ')
+    product.append({'name': name,'price':price})
+    i+=1
+
+for prod in product:
+    print(f'product name: {prod["name"]} product price:{prod["price"]}')
