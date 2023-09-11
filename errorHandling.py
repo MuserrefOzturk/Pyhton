@@ -51,5 +51,7 @@ while True:
         print(e)
     else:
         break
+    finally:
+        print('try except ended')
 
 '''
